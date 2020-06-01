@@ -9,14 +9,62 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enterworld"
+    },
+    {
+      "name": "TheEverythingModTitleBlockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_everything_mod_title_block_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheEverythingModTitleBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_everything_mod_title_block"
+    },
+    {
+      "name": "OnRightClickGiveAchievment",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_right_click_give_achievment",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "advancements.enterworld.title": "Welcome to the game",
-      "advancements.enterworld.descr": "play with The Everything Mod"
+      "advancements.enterworld.descr": "Touch The Everything Mod Title Block"
     }
   },
   "workspaceSettings": {

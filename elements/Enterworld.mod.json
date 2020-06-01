@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Welcome to the game",
-    "achievementDescription": "play with The Everything Mod",
+    "achievementDescription": "Touch The Everything Mod Title Block",
     "achievementIcon": {
-      "value": "Blocks.BUBBLE_COLUMN"
+      "value": "CUSTOM:TheEverythingModTitleBlock"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -18,8 +18,8 @@
     "rewardXP": 1,
     "achievementType": "task",
     "parent": {
-      "value": "CUSTOM:We"
+      "value": "CUSTOM:Enterworld"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"53\" y=\"91\"><field name=\"dimension\">Surface</field><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"-24\" y=\"31\"><field name=\"dimension\">Surface</field><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }
 }

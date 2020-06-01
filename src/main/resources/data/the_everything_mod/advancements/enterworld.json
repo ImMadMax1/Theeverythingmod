@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:bubble_column"
+      "item": "the_everything_mod:the_everything_mod_title_block"
     },
     "title": {
       "translate": "advancements.enterworld.title"
@@ -25,5 +25,5 @@
   "rewards": {
     "experience": 1
   },
-  "parent": "the_everything_mod:we"
+  "parent": "the_everything_mod:enterworld"
 }
