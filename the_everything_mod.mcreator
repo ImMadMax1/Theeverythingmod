@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "We",
-      "type": "achievement",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "we"
-    },
-    {
       "name": "Enterworld",
       "type": "achievement",
       "sortid": 2,
@@ -25,8 +16,6 @@
   "language_map": {
     "en_us": {
       "advancements.enterworld.title": "Welcome to the game",
-      "advancements.we.descr": "w",
-      "advancements.we.title": "We",
       "advancements.enterworld.descr": "play with The Everything Mod"
     }
   },
