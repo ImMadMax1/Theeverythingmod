@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_everything_mod:blocks/topmusicbox-2.png",
+    "up": "the_everything_mod:blocks/topmusicbox-1.png",
+    "north": "the_everything_mod:blocks/topmusicbox-2.png",
+    "east": "the_everything_mod:blocks/topmusicbox-2.png",
+    "south": "the_everything_mod:blocks/topmusicbox-2.png",
+    "west": "the_everything_mod:blocks/topmusicbox-2.png",
+    "particle": "the_everything_mod:blocks/topmusicbox-2.png"
+  }
+}
