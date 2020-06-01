@@ -18,6 +18,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "musicbox"
+    },
+    {
+      "name": "TheEverythingModTitleBlockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_everything_mod_title_block_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnRightClickGiveAchievment",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_right_click_give_achievment",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheEverythingModTitleBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_everything_mod_title_block"
     }
   ],
   "variable_elements": [],
@@ -25,8 +72,7 @@
   "language_map": {
     "en_us": {
       "advancements.enterworld.title": "Welcome to the game",
-      "advancements.enterworld.descr": "play with The Everything Mod",
-      "block.the_everything_mod.musicbox": "Musicbox"
+      "advancements.enterworld.descr": "play with The Everything Mod"
     }
   },
   "workspaceSettings": {
