@@ -9,14 +9,25 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "we"
+    },
+    {
+      "name": "Enterworld",
+      "type": "achievement",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enterworld"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "advancements.enterworld.title": "Welcome to the game",
       "advancements.we.descr": "w",
-      "advancements.we.title": "We"
+      "advancements.we.title": "We",
+      "advancements.enterworld.descr": "play with The Everything Mod"
     }
   },
   "workspaceSettings": {

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bubble_column"
+    },
+    "title": {
+      "translate": "advancements.enterworld.title"
+    },
+    "description": {
+      "translate": "advancements.enterworld.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enterworld": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "the_everything_mod:we"
+}
