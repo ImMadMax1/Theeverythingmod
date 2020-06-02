@@ -210,6 +210,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fatpackgui"
+    },
+    {
+      "name": "MountainDewFoodEaten",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mountain_dew_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MountainDew",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mountain_dew"
     }
   ],
   "variable_elements": [],
@@ -222,6 +248,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.the_everything_mod.mountain_dew": "Mountain Dew",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "advancements.helloachievment.title": "The Everything Mod",

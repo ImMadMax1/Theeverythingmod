@@ -1,0 +1,27 @@
+{
+  "_fv": 8,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "mountaindew",
+    "customModelName": "Normal",
+    "name": "Mountain Dew",
+    "specialInfo": [
+      "Can be drank to give energy"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "stackSize": 4,
+    "nutritionalValue": 1,
+    "saturation": 0.3,
+    "eatingSpeed": 15,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "MountainDewFoodEaten"
+    }
+  }
+}
