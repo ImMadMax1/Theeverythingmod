@@ -262,6 +262,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fatpackrecipe"
+    },
+    {
+      "name": "Angryboxrecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angryboxrecipe"
     }
   ],
   "variable_elements": [],
