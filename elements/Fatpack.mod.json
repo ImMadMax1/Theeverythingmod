@@ -23,7 +23,10 @@
     ],
     "hasGlow": false,
     "guiBoundTo": "Fatpackgui",
-    "inventorySize": 1,
-    "inventoryStackSize": 64
+    "inventorySize": 30,
+    "inventoryStackSize": 128,
+    "onItemInInventoryTick": {
+      "name": "FatpackItemInInventoryTick"
+    }
   }
 }

@@ -26,9 +26,11 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.theeverythingmod.procedures.FatpackItemInInventoryTickProcedure;
 import net.mcreator.theeverythingmod.itemgroup.EverythingmodItemGroup;
 import net.mcreator.theeverythingmod.gui.FatpackguiGui;
 import net.mcreator.theeverythingmod.TheEverythingModModElements;
@@ -109,6 +111,19 @@ public class FatpackItem extends TheEverythingModModElements.ModElement {
 		}
 
 		@Override
+		public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			int x = (int) entity.getPosX();
+			int y = (int) entity.getPosY();
+			int z = (int) entity.getPosZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				FatpackItemInInventoryTickProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundNBT compound) {
 			return new InventoryCapability();
 		}
@@ -132,10 +147,10 @@ public class FatpackItem extends TheEverythingModModElements.ModElement {
 		}
 
 		private ItemStackHandler createItemHandler() {
-			return new ItemStackHandler(1) {
+			return new ItemStackHandler(30) {
 				@Override
 				public int getSlotLimit(int slot) {
-					return 64;
+					return 128;
 				}
 
 				@Override

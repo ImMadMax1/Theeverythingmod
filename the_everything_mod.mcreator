@@ -212,6 +212,15 @@
       "registry_name": "fatpackgui"
     },
     {
+      "name": "MountainDew",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mountain_dew"
+    },
+    {
       "name": "MountainDewFoodEaten",
       "type": "procedure",
       "sortid": 10,
@@ -229,13 +238,21 @@
       }
     },
     {
-      "name": "MountainDew",
-      "type": "food",
+      "name": "FatpackItemInInventoryTick",
+      "type": "procedure",
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mountain_dew"
+      "registry_name": "fatpack_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

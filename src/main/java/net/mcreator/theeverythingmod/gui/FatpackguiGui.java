@@ -80,7 +80,7 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(1);
+			this.internal = new ItemStackHandler(30);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -110,15 +110,73 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 9, 14) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 22) {
+			}));
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 142, 22) {
+			}));
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 22) {
+			}));
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 115, 22) {
+			}));
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 70, 22) {
+			}));
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 88, 22) {
+			}));
+			this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 16, 40) {
+			}));
+			this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 43, 40) {
+			}));
+			this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 70, 40) {
+			}));
+			this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 88, 40) {
+			}));
+			this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 115, 40) {
+			}));
+			this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 142, 40) {
+			}));
+			this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 16, 94) {
+			}));
+			this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 43, 94) {
+			}));
+			this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 70, 94) {
+			}));
+			this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 88, 94) {
+			}));
+			this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 115, 94) {
+			}));
+			this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 142, 94) {
+			}));
+			this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 16, 58) {
+			}));
+			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 43, 58) {
+			}));
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 70, 58) {
+			}));
+			this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 88, 58) {
+			}));
+			this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 115, 58) {
+			}));
+			this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 142, 58) {
+			}));
+			this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 16, 76) {
+			}));
+			this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 43, 76) {
+			}));
+			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 70, 76) {
+			}));
+			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 88, 76) {
+			}));
+			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 115, 76) {
+			}));
+			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 142, 76) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 28 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 28 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -137,18 +195,18 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 1) {
-					if (!this.mergeItemStack(itemstack1, 1, this.inventorySlots.size(), true)) {
+				if (index < 30) {
+					if (!this.mergeItemStack(itemstack1, 30, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
-					if (index < 1 + 27) {
-						if (!this.mergeItemStack(itemstack1, 1 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 30, false)) {
+					if (index < 30 + 27) {
+						if (!this.mergeItemStack(itemstack1, 30 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 1, 1 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 30, 30 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -286,7 +344,7 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 176;
-			this.ySize = 166;
+			this.ySize = 222;
 		}
 		private static final ResourceLocation texture = new ResourceLocation("the_everything_mod:textures/fatpackgui.png");
 		@Override
@@ -303,6 +361,8 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_everything_mod:textures/new_piskel-2.png_1.png"));
+			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 256, 256);
 		}
 
 		@Override
