@@ -253,6 +253,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "EasyOakLog",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_oak_log"
     }
   ],
   "variable_elements": [],
@@ -267,6 +276,7 @@
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
+      "block.the_everything_mod.easy_oak_log": "Easy Log",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "advancements.helloachievment.title": "The Everything Mod",
       "item.the_everything_mod.fatpack": "Fatpack",
