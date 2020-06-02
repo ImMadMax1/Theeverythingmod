@@ -262,6 +262,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_oak_log"
+    },
+    {
+      "name": "Angryboxrecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "angryboxrecipe"
+    },
+    {
+      "name": "Fatpackrecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fatpackrecipe"
     }
   ],
   "variable_elements": [],
