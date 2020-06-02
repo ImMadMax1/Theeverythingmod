@@ -150,6 +150,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fatpack"
+    },
+    {
+      "name": "Fatpackgui",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fatpackgui"
     }
   ],
   "variable_elements": [],

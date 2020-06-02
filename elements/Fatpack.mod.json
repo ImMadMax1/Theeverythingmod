@@ -22,8 +22,8 @@
       "a backpack for storage"
     ],
     "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "guiBoundTo": "Fatpackgui",
+    "inventorySize": 1,
     "inventoryStackSize": 64
   }
 }
