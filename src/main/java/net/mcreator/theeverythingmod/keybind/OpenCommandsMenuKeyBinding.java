@@ -1,17 +1,35 @@
 
 package net.mcreator.theeverythingmod.keybind;
 
+import org.lwjgl.glfw.GLFW;
+
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.InputEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.theeverythingmod.procedures.OpenCommandsMenuOnKeyPressedProcedure;
+import net.mcreator.theeverythingmod.TheEverythingModModElements;
 import net.mcreator.theeverythingmod.TheEverythingModMod;
+
+import java.util.function.Supplier;
 
 @TheEverythingModModElements.ModElement.Tag
 public class OpenCommandsMenuKeyBinding extends TheEverythingModModElements.ModElement {
-
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
-
 	public OpenCommandsMenuKeyBinding(TheEverythingModModElements instance) {
 		super(instance, 9);
-
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}
@@ -19,7 +37,7 @@ public class OpenCommandsMenuKeyBinding extends TheEverythingModModElements.ModE
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
-		keys = new KeyBinding("key.mcreator.open_commands_menu", GLFW.GLFW_KEY_SLASH, "key.categories.ui");
+		keys = new KeyBinding("key.mcreator.open_commands_menu", GLFW.GLFW_KEY_BACKSLASH, "key.categories.ui");
 		ClientRegistry.registerKeyBinding(keys);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -32,16 +50,12 @@ public class OpenCommandsMenuKeyBinding extends TheEverythingModModElements.ModE
 				if (event.getAction() == GLFW.GLFW_PRESS) {
 					TheEverythingModMod.PACKET_HANDLER.sendToServer(new KeyBindingPressedMessage(0, 0));
 					pressAction(Minecraft.getInstance().player, 0, 0);
-
 				}
 			}
 		}
 	}
-
 	public static class KeyBindingPressedMessage {
-
 		int type, pressedms;
-
 		public KeyBindingPressedMessage(int type, int pressedms) {
 			this.type = type;
 			this.pressedms = pressedms;
@@ -64,19 +78,15 @@ public class OpenCommandsMenuKeyBinding extends TheEverythingModModElements.ModE
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
-
 	private static void pressAction(PlayerEntity entity, int type, int pressedms) {
 		World world = entity.world;
 		int x = (int) entity.getPosX();
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 		if (type == 0) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
@@ -85,11 +95,8 @@ public class OpenCommandsMenuKeyBinding extends TheEverythingModModElements.ModE
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-
 				OpenCommandsMenuOnKeyPressedProcedure.executeProcedure($_dependencies);
 			}
 		}
-
 	}
-
 }

@@ -1,25 +1,50 @@
 
 package net.mcreator.theeverythingmod.gui;
 
-import net.mcreator.theeverythingmod.TheEverythingModMod;
+import org.lwjgl.opengl.GL11;
+
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.network.NetworkEvent;
+import net.minecraftforge.fml.network.IContainerFactory;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.DeferredWorkQueue;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.ContainerType;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.gui.screen.inventory.ContainerScreen;
+import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.client.Minecraft;
+
+import net.mcreator.theeverythingmod.TheEverythingModModElements;
+
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
 
 @TheEverythingModModElements.ModElement.Tag
 public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
-
 	public static HashMap guistate = new HashMap();
-
 	private static ContainerType<GuiContainerMod> containerType = null;
-
 	public CommandsGUIGui(TheEverythingModModElements instance) {
 		super(instance, 8);
-
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
 				GUISlotChangedMessage::handler);
-
 		containerType = new ContainerType<>(new GuiContainerModFactory());
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -32,35 +57,24 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
 		event.getRegistry().register(containerType.setRegistryName("commands_gui"));
 	}
-
 	public static class GuiContainerModFactory implements IContainerFactory {
-
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
 			return new GuiContainerMod(id, inv, extraData);
 		}
-
 	}
 
 	public static class GuiContainerMod extends Container implements Supplier<Map<Integer, Slot>> {
-
 		private World world;
 		private PlayerEntity entity;
 		private int x, y, z;
-
 		private IItemHandler internal;
-
 		private Map<Integer, Slot> customSlots = new HashMap<>();
-
 		private boolean bound = false;
-
 		public GuiContainerMod(int id, PlayerInventory inv, PacketBuffer extraData) {
 			super(containerType, id);
-
 			this.entity = inv.player;
 			this.world = inv.player.world;
-
 			this.internal = new ItemStackHandler(0);
-
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -68,7 +82,6 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 				this.y = pos.getY();
 				this.z = pos.getZ();
 			}
-
 		}
 
 		public Map<Integer, Slot> get() {
@@ -79,16 +92,13 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 		public boolean canInteractWith(PlayerEntity player) {
 			return true;
 		}
-
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static class GuiWindow extends ContainerScreen<GuiContainerMod> {
-
 		private World world;
 		private int x, y, z;
 		private PlayerEntity entity;
-
 		public GuiWindow(GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 			super(container, inventory, text);
 			this.world = container.world;
@@ -99,26 +109,21 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 			this.xSize = 137;
 			this.ySize = 166;
 		}
-
 		private static final ResourceLocation texture = new ResourceLocation("the_everything_mod:textures/commands_gui.png");
-
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
 			this.renderBackground();
 			super.render(mouseX, mouseY, partialTicks);
 			this.renderHoveredToolTip(mouseX, mouseY);
-
 		}
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
-
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_everything_mod:textures/background_for_gui.png"));
 			this.blit(this.guiLeft + 1, this.guiTop + 0, 0, 0, 256, 256);
 		}
@@ -144,17 +149,12 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 		@Override
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
-
 			minecraft.keyboardListener.enableRepeatEvents(true);
-
 		}
-
 	}
 
 	public static class ButtonPressedMessage {
-
 		int buttonID, x, y, z;
-
 		public ButtonPressedMessage(PacketBuffer buffer) {
 			this.buttonID = buffer.readInt();
 			this.x = buffer.readInt();
@@ -184,18 +184,14 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 				int x = message.x;
 				int y = message.y;
 				int z = message.z;
-
 				handleButtonAction(entity, buttonID, x, y, z);
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
 
 	public static class GUISlotChangedMessage {
-
 		int slotID, x, y, z, changeType, meta;
-
 		public GUISlotChangedMessage(int slotID, int x, int y, int z, int changeType, int meta) {
 			this.slotID = slotID;
 			this.x = x;
@@ -233,30 +229,22 @@ public class CommandsGUIGui extends TheEverythingModModElements.ModElement {
 				int x = message.x;
 				int y = message.y;
 				int z = message.z;
-
 				handleSlotAction(entity, slotID, changeType, meta, x, y, z);
 			});
 			context.setPacketHandled(true);
 		}
-
 	}
-
 	private static void handleButtonAction(PlayerEntity entity, int buttonID, int x, int y, int z) {
 		World world = entity.world;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {
 		World world = entity.world;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-
 	}
-
 }

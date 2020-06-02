@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "SLASH",
+    "triggerKey": "BACKSLASH",
     "keyBindingName": "Open Commands Menu",
     "keyBindingCategoryKey": "ui",
     "onKeyPressed": {
