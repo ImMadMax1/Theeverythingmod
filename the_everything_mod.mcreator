@@ -210,6 +210,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fatpackgui"
+    },
+    {
+      "name": "FatpackItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fatpack_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
