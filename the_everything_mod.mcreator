@@ -271,6 +271,38 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "angryboxrecipe"
+    },
+    {
+      "name": "MagmaArmourBootsTickEvent",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magma_armour_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagmaArmour",
+      "type": "armor",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "magma_armour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -284,13 +316,17 @@
   "language_map": {
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
-      "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
+      "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
-      "advancements.helloachievment.title": "The Everything Mod",
       "item.the_everything_mod.fatpack": "Fatpack",
+      "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
+      "itemGroup.tabeverythingmod": "The Everything Mod",
+      "item.the_everything_mod.magma_armourhelmet": "Magma Armour Helmet",
+      "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
+      "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
+      "advancements.helloachievment.title": "The Everything Mod",
       "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "angry box",
-      "itemGroup.tabeverythingmod": "The Everything Mod"
+      "block.the_everything_mod.musicbox": "angry box"
     }
   },
   "workspaceSettings": {

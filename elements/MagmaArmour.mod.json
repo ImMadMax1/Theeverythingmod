@@ -1,0 +1,50 @@
+{
+  "_fv": 8,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "diamond_helmet-1.png",
+    "enableBody": true,
+    "textureBody": "diamond_helmet-3.png",
+    "enableLeggings": true,
+    "textureLeggings": "diamond_helmet-5.png",
+    "enableBoots": true,
+    "textureBoots": "diamond_boots-1.png",
+    "onBootsTick": {
+      "name": "MagmaArmourBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "armorTextureFile": "diamond_armor_layer_1-1.png",
+    "helmetName": "Magma Armour Helmet",
+    "bodyName": "Magma Armour Body",
+    "leggingsName": "Magma Armour Leggings",
+    "bootsName": "Magma Armour Boots",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 40,
+    "damageValueHelmet": 5,
+    "damageValueBody": 9,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 5,
+    "enchantability": 12,
+    "toughness": 3.0,
+    "equipSound": {
+      "value": "item.bucket.fill"
+    },
+    "repairItems": []
+  }
+}
