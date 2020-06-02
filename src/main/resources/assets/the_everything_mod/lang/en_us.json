@@ -3,13 +3,12 @@
   "key.mcreator.open_commands_menu": "Open Commands Menu",
   "item.the_everything_mod.fatpack": "Fatpack",
   "block.the_everything_mod.easystone": "Easy Stone",
-  "block.the_everything_mod.easy_leaves": "Easy Leaves",
   "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
+  "block.the_everything_mod.easy_leaves": "Easy Leaves",
   "block.the_everything_mod.easy_grass": "Easy Grass",
   "itemGroup.tabeverythingmod": "The Everything Mod",
   "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
-  "block.the_everything_mod.easy_oak_log": "Easy Log",
   "advancements.helloachievment.title": "The Everything Mod",
   "advancements.helloachievment.descr": "Use the hello command",
-  "block.the_everything_mod.musicbox": "angry box"
+  "block.the_everything_mod.musicbox": "Musicbox"
 }
