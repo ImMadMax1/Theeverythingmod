@@ -1,0 +1,60 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 273,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "background_for_gui.png",
+          "name": "background_for_gui.png",
+          "x": 292,
+          "y": 74
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Commands",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Commands",
+          "x": 389,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "-------------------------",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "-------------------------",
+          "x": 304,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/hello",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "/hello",
+          "x": 316,
+          "y": 135
+        }
+      }
+    ]
+  }
+}
