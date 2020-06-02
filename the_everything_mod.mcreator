@@ -253,6 +253,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Fatpackrecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fatpackrecipe"
     }
   ],
   "variable_elements": [],
