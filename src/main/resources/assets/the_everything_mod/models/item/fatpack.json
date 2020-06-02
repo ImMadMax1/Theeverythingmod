@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_everything_mod:items/new_piskel-1.png"
+  }
+}
