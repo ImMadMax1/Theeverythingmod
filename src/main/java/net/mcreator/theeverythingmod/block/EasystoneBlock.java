@@ -2,7 +2,6 @@
 package net.mcreator.theeverythingmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -36,8 +35,7 @@ public class EasystoneBlock extends TheEverythingModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.8999999999999999f, 9f).lightValue(0)
-					.harvestLevel(1).harvestTool(ToolType.PICKAXE));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.8999999999999999f, 9f).lightValue(0));
 			setRegistryName("easystone");
 		}
 
@@ -46,7 +44,7 @@ public class EasystoneBlock extends TheEverythingModModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.STONE, (int) (1)));
+			return Collections.singletonList(new ItemStack(Blocks.COBBLESTONE, (int) (4)));
 		}
 	}
 }

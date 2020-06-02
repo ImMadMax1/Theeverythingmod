@@ -28,11 +28,11 @@
     "creativeTab": {
       "value": "CUSTOM:Everythingmod"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.COBBLESTONE"
     },
-    "dropAmount": 1,
+    "dropAmount": 4,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

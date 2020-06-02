@@ -20,30 +20,30 @@ import net.mcreator.theeverythingmod.TheEverythingModModElements;
 import io.netty.buffer.Unpooled;
 
 @TheEverythingModModElements.ModElement.Tag
-public class OpenCommandsMenuOnKeyPressedProcedure extends TheEverythingModModElements.ModElement {
-	public OpenCommandsMenuOnKeyPressedProcedure(TheEverythingModModElements instance) {
-		super(instance, 9);
+public class HelpCommandExecutedProcedure extends TheEverythingModModElements.ModElement {
+	public HelpCommandExecutedProcedure(TheEverythingModModElements instance) {
+		super(instance, 18);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure OpenCommandsMenuOnKeyPressed!");
+			System.err.println("Failed to load dependency entity for procedure HelpCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure OpenCommandsMenuOnKeyPressed!");
+			System.err.println("Failed to load dependency x for procedure HelpCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure OpenCommandsMenuOnKeyPressed!");
+			System.err.println("Failed to load dependency y for procedure HelpCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure OpenCommandsMenuOnKeyPressed!");
+			System.err.println("Failed to load dependency z for procedure HelpCommandExecuted!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure OpenCommandsMenuOnKeyPressed!");
+			System.err.println("Failed to load dependency world for procedure HelpCommandExecuted!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
