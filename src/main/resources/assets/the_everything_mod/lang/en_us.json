@@ -1,4 +1,6 @@
 {
+  "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
   "advancements.enterworld.title": "Welcome to the game",
-  "advancements.enterworld.descr": "play with The Everything Mod"
+  "advancements.enterworld.descr": "play with The Everything Mod",
+  "block.the_everything_mod.musicbox": "Musicbox"
 }

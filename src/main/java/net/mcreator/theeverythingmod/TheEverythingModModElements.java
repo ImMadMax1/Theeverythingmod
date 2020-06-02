@@ -51,6 +51,8 @@ public class TheEverythingModModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public TheEverythingModModElements() {
+		sounds.put(new ResourceLocation("the_everything_mod", "dragoneatingspastic"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("the_everything_mod", "dragoneatingspastic")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("the_everything_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

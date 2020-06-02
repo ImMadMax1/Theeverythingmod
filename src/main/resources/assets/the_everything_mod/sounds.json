@@ -1,1 +1,11 @@
-{}
+{
+  "dragoneatingspastic": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "the_everything_mod:dragon-eating-spastic-speech",
+        "stream": false
+      }
+    ]
+  }
+}
