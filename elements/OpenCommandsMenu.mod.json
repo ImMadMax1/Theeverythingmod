@@ -1,0 +1,12 @@
+{
+  "_fv": 8,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SLASH",
+    "keyBindingName": "Open Commands Menu",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "OpenCommandsMenuOnKeyPressed"
+    }
+  }
+}
