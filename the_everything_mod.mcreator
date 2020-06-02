@@ -213,13 +213,13 @@
       }
     },
     {
-      "name": "EasyOakLog",
-      "type": "block",
+      "name": "Fatpackrecipe",
+      "type": "recipe",
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_oak_log"
+      "registry_name": "fatpackrecipe"
     },
     {
       "name": "Angryboxrecipe",
@@ -231,40 +231,28 @@
       "registry_name": "angryboxrecipe"
     },
     {
-      "name": "Fatpackrecipe",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fatpackrecipe"
-    },
-    {
-      "name": "EasyLeaves",
-      "type": "block",
+      "name": "MagmaArmour",
+      "type": "armor",
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_leaves"
+      "registry_name": "magma_armour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     },
     {
-      "name": "EasyLeavesApple",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_leaves_apple"
-    },
-    {
-      "name": "EasyWaterMobplayerCollidesBlock",
+      "name": "MagmaArmourBootsTickEvent",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_water_mobplayer_collides_block",
+      "registry_name": "magma_armour_boots_tick_event",
       "metadata": {
         "dependencies": [
           {
@@ -273,33 +261,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "EasyWater",
-      "type": "fluid",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_water"
-    },
-    {
-      "name": "EasyGrass",
-      "type": "block",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easy_grass"
-    },
-    {
-      "name": "Easystone",
-      "type": "block",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "easystone"
     },
     {
       "name": "HelpCommandExecuted",
@@ -344,37 +305,40 @@
       "registry_name": "help"
     },
     {
-      "name": "EasyBiome",
-      "type": "biome",
-      "sortid": 19,
+      "name": "Easystone",
+      "type": "block",
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "easy_biome"
+      "registry_name": "easystone"
     },
     {
-      "name": "MagmaArmour",
-      "type": "armor",
-      "sortid": 13,
+      "name": "EasyOakLog",
+      "type": "block",
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magma_armour",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
+      "registry_name": "easy_oak_log"
     },
     {
-      "name": "MagmaArmourBootsTickEvent",
+      "name": "EasyWater",
+      "type": "fluid",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_water"
+    },
+    {
+      "name": "EasyWaterMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 13,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "magma_armour_boots_tick_event",
+      "registry_name": "easy_water_mobplayer_collides_block",
       "metadata": {
         "dependencies": [
           {
@@ -383,6 +347,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "EasyGrass",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_grass"
+    },
+    {
+      "name": "EasyLeaves",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_leaves"
+    },
+    {
+      "name": "EasyLeavesApple",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_leaves_apple"
+    },
+    {
+      "name": "EasyBiome",
+      "type": "biome",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_biome"
     }
   ],
   "variable_elements": [],
