@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "the_everything_mod:the_everything_mod_title_block"
+    },
+    "title": {
+      "translate": "advancements.helloachievment.title"
+    },
+    "description": {
+      "translate": "advancements.helloachievment.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "helloachievment": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "item": "the_everything_mod:the_everything_mod_title_block"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

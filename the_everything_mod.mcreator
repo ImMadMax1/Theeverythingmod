@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Enterworld",
-      "type": "achievement",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enterworld"
-    },
-    {
       "name": "Musicbox",
       "type": "block",
       "sortid": 3,
@@ -132,6 +123,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawntitle"
+    },
+    {
+      "name": "Helloachievment",
+      "type": "achievement",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "helloachievment"
     }
   ],
   "variable_elements": [],
@@ -145,8 +145,8 @@
   "language_map": {
     "en_us": {
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
-      "advancements.enterworld.title": "Welcome to the game",
-      "advancements.enterworld.descr": "play with The Everything Mod",
+      "advancements.helloachievment.title": "The Everything Mod",
+      "advancements.helloachievment.descr": "Use the hello command",
       "block.the_everything_mod.musicbox": "Musicbox"
     }
   },

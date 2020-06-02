@@ -27,7 +27,7 @@ public class OnRightClickGiveAchievmentProcedure extends TheEverythingModModElem
 		if ((entity instanceof PlayerEntity)) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
-						.getAdvancement(new ResourceLocation("the_everything_mod:enterworld"));
+						.getAdvancement(new ResourceLocation("the_everything_mod:helloachievment"));
 				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();

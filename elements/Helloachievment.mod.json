@@ -1,0 +1,25 @@
+{
+  "_fv": 8,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The Everything Mod",
+    "achievementDescription": "Use the hello command",
+    "achievementIcon": {
+      "value": "CUSTOM:TheEverythingModTitleBlock"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"45\" y=\"27\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:TheEverythingModTitleBlock</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}
