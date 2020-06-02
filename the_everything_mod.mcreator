@@ -94,13 +94,21 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawntitle"
+    },
+    {
+      "name": "Musicbox",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "musicbox"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "advancements.enterworld.title": "Welcome to the game",
       "advancements.enterworld.descr": "Touch The Everything Mod Title Block"
     }
