@@ -141,6 +141,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "everythingmod"
+    },
+    {
+      "name": "Fatpack",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fatpack"
     }
   ],
   "variable_elements": [],
@@ -155,6 +164,7 @@
     "en_us": {
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "advancements.helloachievment.title": "The Everything Mod",
+      "item.the_everything_mod.fatpack": "Fatpack",
       "advancements.helloachievment.descr": "Use the hello command",
       "block.the_everything_mod.musicbox": "Musicbox",
       "itemGroup.tabeverythingmod": "The Everything Mod"
