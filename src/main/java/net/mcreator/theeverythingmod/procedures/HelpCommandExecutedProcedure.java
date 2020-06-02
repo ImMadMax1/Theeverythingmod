@@ -1,11 +1,28 @@
 package net.mcreator.theeverythingmod.procedures;
 
+import net.minecraftforge.fml.network.NetworkHooks;
+
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.inventory.container.INamedContainerProvider;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.theeverythingmod.gui.CommandsGUIGui;
+import net.mcreator.theeverythingmod.TheEverythingModModElements;
+
+import io.netty.buffer.Unpooled;
+
 @TheEverythingModModElements.ModElement.Tag
 public class HelpCommandExecutedProcedure extends TheEverythingModModElements.ModElement {
-
 	public HelpCommandExecutedProcedure(TheEverythingModModElements instance) {
 		super(instance, 18);
-
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -29,13 +46,11 @@ public class HelpCommandExecutedProcedure extends TheEverythingModModElements.Mo
 			System.err.println("Failed to load dependency world for procedure HelpCommandExecuted!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-
 		{
 			Entity _ent = entity;
 			if (_ent instanceof ServerPlayerEntity) {
@@ -53,7 +68,5 @@ public class HelpCommandExecutedProcedure extends TheEverythingModModElements.Mo
 				}, _bpos);
 			}
 		}
-
 	}
-
 }
