@@ -38,7 +38,7 @@ public class EasyGrassBlock extends TheEverythingModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.WET_GRASS).hardnessAndResistance(0.7f, 5.5f).lightValue(0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.WET_GRASS).hardnessAndResistance(0.15f, 0f).lightValue(0));
 			setRegistryName("easy_grass");
 		}
 

@@ -35,7 +35,7 @@ public class EasystoneBlock extends TheEverythingModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.8999999999999999f, 9f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(0.1f, 0f).lightValue(0));
 			setRegistryName("easystone");
 		}
 

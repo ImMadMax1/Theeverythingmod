@@ -342,6 +342,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "help"
+    },
+    {
+      "name": "EasyBiome",
+      "type": "biome",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_biome"
     }
   ],
   "variable_elements": [],

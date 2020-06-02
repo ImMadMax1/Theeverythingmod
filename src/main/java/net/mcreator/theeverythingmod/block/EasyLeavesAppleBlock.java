@@ -48,7 +48,7 @@ public class EasyLeavesAppleBlock extends TheEverythingModModElements.ModElement
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.8f, 5f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.15f, 0f).lightValue(0).notSolid());
 			setRegistryName("easy_leaves_apple");
 		}
 
