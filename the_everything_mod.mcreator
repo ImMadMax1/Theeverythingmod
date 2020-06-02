@@ -280,6 +280,50 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "fatpackrecipe"
+    },
+    {
+      "name": "EasyLeaves",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_leaves"
+    },
+    {
+      "name": "EasyLeavesApple",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_leaves_apple"
+    },
+    {
+      "name": "EasyWaterMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_water_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EasyWater",
+      "type": "fluid",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easy_water"
     }
   ],
   "variable_elements": [],
@@ -292,15 +336,19 @@
   ],
   "language_map": {
     "en_us": {
+      "fluid.easy_water": "EasyWater",
+      "item.the_everything_mod.easy_water_bucket": "EasyWater Bucket",
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
+      "key.mcreator.open_commands_menu": "Open Commands Menu",
+      "item.the_everything_mod.fatpack": "Fatpack",
+      "block.the_everything_mod.easy_leaves": "Easy Leaves",
+      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
+      "itemGroup.tabeverythingmod": "The Everything Mod",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "block.the_everything_mod.easy_oak_log": "Easy Log",
-      "key.mcreator.open_commands_menu": "Open Commands Menu",
       "advancements.helloachievment.title": "The Everything Mod",
-      "item.the_everything_mod.fatpack": "Fatpack",
       "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox",
-      "itemGroup.tabeverythingmod": "The Everything Mod"
+      "block.the_everything_mod.musicbox": "Musicbox"
     }
   },
   "workspaceSettings": {
