@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "the_everything_mod:block/easy_oak_log"
+    },
+    "facing=north": {
+      "model": "the_everything_mod:block/easy_oak_log"
+    },
+    "facing=east": {
+      "model": "the_everything_mod:block/easy_oak_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "the_everything_mod:block/easy_oak_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "the_everything_mod:block/easy_oak_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "the_everything_mod:block/easy_oak_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

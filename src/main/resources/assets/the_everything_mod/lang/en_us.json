@@ -1,14 +1,10 @@
 {
   "item.the_everything_mod.mountain_dew": "Mountain Dew",
-  "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
-  "key.mcreator.open_commands_menu": "Open Commands Menu",
-  "item.the_everything_mod.fatpack": "Fatpack",
-  "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
-  "itemGroup.tabeverythingmod": "The Everything Mod",
-  "item.the_everything_mod.magma_armourhelmet": "Magma Armour Helmet",
   "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
-  "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
+  "key.mcreator.open_commands_menu": "Open Commands Menu",
   "advancements.helloachievment.title": "The Everything Mod",
+  "item.the_everything_mod.fatpack": "Fatpack",
   "advancements.helloachievment.descr": "Use the hello command",
-  "block.the_everything_mod.musicbox": "angry box"
+  "block.the_everything_mod.musicbox": "angry box",
+  "itemGroup.tabeverythingmod": "The Everything Mod"
 }

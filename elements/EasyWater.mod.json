@@ -1,0 +1,24 @@
+{
+  "_fv": 8,
+  "_type": "fluid",
+  "definition": {
+    "name": "EasyWater",
+    "textureStill": "easywater",
+    "textureFlowing": "easyweatermoving",
+    "luminosity": 1,
+    "density": 100,
+    "viscosity": 100,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "onEntityCollides": {
+      "name": "EasyWaterMobplayerCollidesBlock"
+    }
+  }
+}
