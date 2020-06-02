@@ -361,7 +361,7 @@ public class FatpackguiGui extends TheEverythingModModElements.ModElement {
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_everything_mod:textures/new_piskel-2.png.png"));
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("the_everything_mod:textures/new_piskel-2.png_1.png"));
 			this.blit(this.guiLeft + 0, this.guiTop + 0, 0, 0, 256, 256);
 		}
 

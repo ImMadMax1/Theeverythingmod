@@ -8,15 +8,6 @@
     "renderBgLayer": true,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "new_piskel-2.png.png",
-          "name": "new_piskel-2.png.png",
-          "x": 251,
-          "y": 18
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -404,6 +395,15 @@
           "name": "Slot #29",
           "x": 534,
           "y": 168
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel-2.png_1.png",
+          "name": "new_piskel-2.png_1.png",
+          "x": 250,
+          "y": 18
         }
       }
     ]
