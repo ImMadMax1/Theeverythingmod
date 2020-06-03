@@ -2,12 +2,12 @@
 package net.mcreator.theeverythingmod.item;
 
 @TheEverythingModModElements.ModElement.Tag
-public class VioletoreGemItem extends TheEverythingModModElements.ModElement {
+public class MetalIngotItem extends TheEverythingModModElements.ModElement {
 
-	@ObjectHolder("the_everything_mod:violetore_gem")
+	@ObjectHolder("the_everything_mod:metal_ingot")
 	public static final Item block = null;
 
-	public VioletoreGemItem(TheEverythingModModElements instance) {
+	public MetalIngotItem(TheEverythingModModElements instance) {
 		super(instance, 22);
 	}
 
@@ -20,7 +20,7 @@ public class VioletoreGemItem extends TheEverythingModModElements.ModElement {
 
 		public ItemCustom() {
 			super(new Item.Properties().group(EverythingmodItemGroup.tab).maxStackSize(64));
-			setRegistryName("violetore_gem");
+			setRegistryName("metal_ingot");
 		}
 
 		@Override
@@ -39,15 +39,9 @@ public class VioletoreGemItem extends TheEverythingModModElements.ModElement {
 		}
 
 		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
-
-		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("can create magical items"));
+			list.add(new StringTextComponent("can be used to craft sturdier items"));
 		}
 
 	}

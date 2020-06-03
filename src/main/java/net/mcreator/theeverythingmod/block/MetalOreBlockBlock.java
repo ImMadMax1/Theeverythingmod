@@ -4,12 +4,12 @@ package net.mcreator.theeverythingmod.block;
 import net.minecraft.block.material.Material;
 
 @TheEverythingModModElements.ModElement.Tag
-public class VioletoreOreBlockBlock extends TheEverythingModModElements.ModElement {
+public class MetalOreBlockBlock extends TheEverythingModModElements.ModElement {
 
-	@ObjectHolder("the_everything_mod:violetore_ore_block")
+	@ObjectHolder("the_everything_mod:metal_ore_block")
 	public static final Block block = null;
 
-	public VioletoreOreBlockBlock(TheEverythingModModElements instance) {
+	public MetalOreBlockBlock(TheEverythingModModElements instance) {
 		super(instance, 21);
 
 	}
@@ -26,10 +26,10 @@ public class VioletoreOreBlockBlock extends TheEverythingModModElements.ModEleme
 		public CustomBlock() {
 			super(
 
-					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 10f).lightValue(0).harvestLevel(13)
+					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5.6f, 10f).lightValue(0).harvestLevel(3)
 							.harvestTool(ToolType.PICKAXE));
 
-			setRegistryName("violetore_ore_block");
+			setRegistryName("metal_ore_block");
 		}
 
 		@Override

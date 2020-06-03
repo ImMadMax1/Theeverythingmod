@@ -2,12 +2,12 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "easyleaves",
-    "textureTop": "easyleaves",
-    "textureLeft": "easyleaves",
-    "textureFront": "easyleaves",
-    "textureRight": "easyleaves",
-    "textureBack": "easyleaves",
+    "texture": "metalorenew",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
@@ -20,26 +20,26 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Easy Leaves",
+    "name": "Metal Ore",
     "specialInfo": [],
-    "hardness": 0.09999999999999999,
-    "resistance": 1.0,
+    "hardness": 3.9000000000000004,
+    "resistance": 6.1677205203558705,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:Everythingmod"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "Blocks.SAPLING#5"
+      "value": "CUSTOM:MetalIngot"
     },
-    "dropAmount": 2,
+    "dropAmount": 4,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 1,
+    "lightOpacity": 255,
     "material": {
-      "value": "LEAVES"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -57,11 +57,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -79,16 +79,18 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "frequencyPerChunks": 8,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 49
   }
 }

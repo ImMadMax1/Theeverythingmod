@@ -385,6 +385,15 @@
       "registry_name": "easy_biome"
     },
     {
+      "name": "VioletoreOreSmelting",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_ore_smelting"
+    },
+    {
       "name": "VioletoreOre",
       "type": "block",
       "sortid": 20,
@@ -430,13 +439,58 @@
       "registry_name": "violetore_block_ore_recipe"
     },
     {
-      "name": "VioletoreOreSmelting",
+      "name": "MetalOre",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore"
+    },
+    {
+      "name": "MetalOreSmelting",
       "type": "recipe",
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "violetore_ore_smelting"
+      "registry_name": "metal_ore_smelting"
+    },
+    {
+      "name": "MetalOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore_block_recipe"
+    },
+    {
+      "name": "MetalBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_block_ore_recipe"
+    },
+    {
+      "name": "MetalOreBlock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore_block"
+    },
+    {
+      "name": "MetalIngot",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ingot"
     }
   ],
   "variable_elements": [],
@@ -464,11 +518,8 @@
       "block.the_everything_mod.easy_oak_log": "Easy Log",
       "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
       "advancements.helloachievment.title": "The Everything Mod",
-      "item.the_everything_mod.violetore_gem": "Violetore",
-      "block.the_everything_mod.violetore_ore": "Violetore Ore",
       "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox",
-      "block.the_everything_mod.violetore_ore_block": "Block of Violetore"
+      "block.the_everything_mod.musicbox": "Musicbox"
     }
   },
   "workspaceSettings": {

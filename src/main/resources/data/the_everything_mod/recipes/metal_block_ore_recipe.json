@@ -1,0 +1,13 @@
+{
+  "group": "the_everything_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_everything_mod:unknown_element"
+    }
+  ],
+  "result": {
+    "item": "the_everything_mod:unknown_element",
+    "count": 9
+  }
+}
