@@ -397,7 +397,7 @@
       "name": "VioletoreOre",
       "type": "block",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "violetore_ore"
@@ -406,7 +406,7 @@
       "name": "VioletoreOreBlock",
       "type": "block",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "violetore_ore_block"
@@ -415,7 +415,7 @@
       "name": "VioletoreGem",
       "type": "item",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "violetore_gem"
@@ -442,7 +442,7 @@
       "name": "MetalOre",
       "type": "block",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ore"
@@ -478,7 +478,7 @@
       "name": "MetalOreBlock",
       "type": "block",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ore_block"
@@ -487,10 +487,61 @@
       "name": "MetalIngot",
       "type": "item",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ingot"
+    },
+    {
+      "name": "MetalArmor",
+      "type": "armor",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "MetalArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_helmet_recipe"
+    },
+    {
+      "name": "MetalArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_body_recipe"
+    },
+    {
+      "name": "MetalArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_leggings_recipe"
+    },
+    {
+      "name": "MetalArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -504,22 +555,32 @@
   "language_map": {
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
-      "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
+      "item.the_everything_mod.metal_ingot": "Metal",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "item.the_everything_mod.fatpack": "Fatpack",
+      "block.the_everything_mod.metal_ore_block": "Block of Metal",
+      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
+      "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
+      "advancements.helloachievment.title": "The Everything Mod",
+      "item.the_everything_mod.violetore_gem": "Violetore",
+      "block.the_everything_mod.violetore_ore": "Violetore Ore",
+      "advancements.helloachievment.descr": "Use the hello command",
+      "block.the_everything_mod.musicbox": "Musicbox",
+      "block.the_everything_mod.violetore_ore_block": "Block of Violetore",
+      "item.the_everything_mod.metal_armorboots": "Metal Boots",
+      "item.the_everything_mod.metal_armorlegs": "Metal Leggings",
+      "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
       "block.the_everything_mod.easystone": "Easy Stone",
       "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
-      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "block.the_everything_mod.easy_leaves": "Easy Leaves",
       "block.the_everything_mod.easy_grass": "Easy Grass",
+      "item.the_everything_mod.metal_armorbody": "Metal Chestplate",
       "itemGroup.tabeverythingmod": "The Everything Mod",
+      "item.the_everything_mod.metal_armorhelmet": "Metal Helmet",
       "item.the_everything_mod.magma_armourhelmet": "Magma Armour Helmet",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "block.the_everything_mod.easy_oak_log": "Easy Log",
-      "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
-      "advancements.helloachievment.title": "The Everything Mod",
-      "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox"
+      "block.the_everything_mod.metal_ore": "Metal Ore"
     }
   },
   "workspaceSettings": {
