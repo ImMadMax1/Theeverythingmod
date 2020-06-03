@@ -24,11 +24,13 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.theeverythingmod.entity.EasypigEntity;
 import net.mcreator.theeverythingmod.block.EasystoneBlock;
 import net.mcreator.theeverythingmod.block.EasyOakLogBlock;
 import net.mcreator.theeverythingmod.block.EasyLeavesBlock;
@@ -77,6 +79,7 @@ public class EasyBiomeBiome extends TheEverythingModModElements.ModElement {
 							new SimpleBlockStateProvider(EasyLeavesBlock.block.getDefaultState()))).baseHeight(5)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EasypigEntity.entity, 15, 1, 5));
 		}
 	}
 

@@ -59,6 +59,10 @@
       "value": "plains"
     },
     "biomeDictionaryTypes": [],
-    "spawnList": []
+    "spawnList": [
+      {
+        "value": "CUSTOM:Easypig"
+      }
+    ]
   }
 }
