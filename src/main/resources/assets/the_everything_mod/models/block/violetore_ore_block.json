@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "the_everything_mod:blocks/violetore_ore_block",
-    "particle": "the_everything_mod:blocks/violetore_ore_block"
+    "all": "the_everything_mod:blocks/violetblock",
+    "particle": "the_everything_mod:blocks/violetblock"
   }
 }

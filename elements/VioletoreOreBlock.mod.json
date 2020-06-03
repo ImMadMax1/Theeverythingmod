@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "violetore_ore_block",
+    "texture": "violetblock",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -61,10 +61,10 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 13,
-    "spawnParticles": false,
+    "breakHarvestLevel": 3,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "COMPOSTER"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -81,14 +81,10 @@
     "inventoryInSlotIDs": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "blocksToReplace": [],
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 0
   }
 }
