@@ -632,6 +632,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_hoe_recipe"
+    },
+    {
+      "name": "Easypig",
+      "type": "mob",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easypig"
     }
   ],
   "variable_elements": [],
@@ -646,12 +655,14 @@
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
       "item.the_everything_mod.metal_ingot": "Metal",
+      "item.the_everything_mod.easypig": "Easy Pig Spawn Egg",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "item.the_everything_mod.metal_shovel": "Metal Shovel",
       "item.the_everything_mod.fatpack": "Fatpack",
       "block.the_everything_mod.metal_ore_block": "Block of Metal",
-      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
+      "entity.the_everything_mod.easypig": "Easy Pig",
       "item.the_everything_mod.metal_axe": "Metal Axe",
+      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
       "advancements.helloachievment.title": "The Everything Mod",
       "item.the_everything_mod.violetore_gem": "Violetore",
