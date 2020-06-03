@@ -59,8 +59,8 @@ public class EasyBiomeBiome extends TheEverythingModModElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(0.7f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.PLAINS).waterColor(4159204).waterFogColor(329011).parent("plains")
+			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.4f).temperature(0.7f).precipitation(Biome.RainType.NONE)
+					.category(Biome.Category.SAVANNA).waterColor(4159204).waterFogColor(329011).parent("plains")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(EasyGrassBlock.block.getDefaultState(),
 							EasystoneBlock.block.getDefaultState(), EasystoneBlock.block.getDefaultState())));
 			setRegistryName("easy_biome");
@@ -69,14 +69,14 @@ public class EasyBiomeBiome extends TheEverythingModModElements.ModElement {
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(26))));
+					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(31))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(28))));
+					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(32))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
 					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(EasyOakLogBlock.block.getDefaultState()),
-							new SimpleBlockStateProvider(EasyLeavesBlock.block.getDefaultState()))).baseHeight(4)
+							new SimpleBlockStateProvider(EasyLeavesBlock.block.getDefaultState()))).baseHeight(5)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(5, 0.1F, 1))));
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 		}
 	}
 
@@ -91,7 +91,7 @@ public class EasyBiomeBiome extends TheEverythingModModElements.ModElement {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 4;
+			int height = rand.nextInt(5) + 5;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {

@@ -2,10 +2,13 @@
 package net.mcreator.theeverythingmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -45,6 +48,11 @@ public class EasyGrassBlock extends TheEverythingModModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
 			return adjacentBlockState.getBlock() == this ? true : super.isSideInvisible(state, adjacentBlockState, side);
+		}
+
+		@Override
+		public boolean canSustainPlant(BlockState state, IBlockReader world, BlockPos pos, Direction direction, IPlantable plantable) {
+			return true;
 		}
 
 		@Override

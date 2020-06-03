@@ -11,7 +11,7 @@
     "generateLakes": false,
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 4,
+    "minHeight": 5,
     "spawnVines": false,
     "treeVines": {
       "value": "Blocks.VINE"
@@ -38,9 +38,9 @@
       "value": -14329397,
       "falpha": 0.0
     },
-    "treesPerChunk": 5,
-    "grassPerChunk": 28,
-    "flowersPerChunk": 26,
+    "treesPerChunk": 2,
+    "grassPerChunk": 32,
+    "flowersPerChunk": 31,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPathcesPerChunk": 0,
@@ -50,11 +50,11 @@
     "rainingPossibility": 0.0,
     "temperature": 0.7,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.4,
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeType": "WARM",
-    "biomeCategory": "PLAINS",
+    "biomeCategory": "SAVANNA",
     "parent": {
       "value": "plains"
     },
