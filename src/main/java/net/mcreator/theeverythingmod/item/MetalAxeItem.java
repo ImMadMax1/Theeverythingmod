@@ -27,7 +27,7 @@ public class MetalAxeItem extends TheEverythingModModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 7f;
+				return 5f;
 			}
 
 			public float getAttackDamage() {
