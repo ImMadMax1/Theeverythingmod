@@ -493,15 +493,6 @@
       "registry_name": "metal_ingot"
     },
     {
-      "name": "MetalArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "metal_armor_boots_recipe"
-    },
-    {
       "name": "MetalArmor",
       "type": "armor",
       "sortid": 26,
@@ -515,15 +506,6 @@
         "eb": true,
         "ec": true
       }
-    },
-    {
-      "name": "MetalArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "metal_armor_leggings_recipe"
     },
     {
       "name": "MetalArmorHelmetRecipe",
@@ -542,6 +524,114 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_armor_body_recipe"
+    },
+    {
+      "name": "MetalArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_leggings_recipe"
+    },
+    {
+      "name": "MetalArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_boots_recipe"
+    },
+    {
+      "name": "MetalShovelRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_shovel_recipe"
+    },
+    {
+      "name": "MetalShovel",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_shovel"
+    },
+    {
+      "name": "MetalAxeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_axe_recipe"
+    },
+    {
+      "name": "MetalPickaxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_pickaxe"
+    },
+    {
+      "name": "MetalPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_pickaxe_recipe"
+    },
+    {
+      "name": "MetalSword",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_sword"
+    },
+    {
+      "name": "MetalSwordRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_sword_recipe"
+    },
+    {
+      "name": "MetalAxe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_axe"
+    },
+    {
+      "name": "MetalHoe",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_hoe"
+    },
+    {
+      "name": "MetalHoeRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_hoe_recipe"
     }
   ],
   "variable_elements": [],
@@ -555,14 +645,27 @@
   "language_map": {
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
+      "item.the_everything_mod.metal_ingot": "Metal",
+      "key.mcreator.open_commands_menu": "Open Commands Menu",
+      "item.the_everything_mod.metal_shovel": "Metal Shovel",
+      "item.the_everything_mod.fatpack": "Fatpack",
+      "block.the_everything_mod.metal_ore_block": "Block of Metal",
+      "item.the_everything_mod.metal_axe": "Metal Axe",
+      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
+      "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
+      "advancements.helloachievment.title": "The Everything Mod",
+      "item.the_everything_mod.violetore_gem": "Violetore",
+      "block.the_everything_mod.violetore_ore": "Violetore Ore",
+      "advancements.helloachievment.descr": "Use the hello command",
+      "block.the_everything_mod.musicbox": "Musicbox",
+      "block.the_everything_mod.violetore_ore_block": "Block of Violetore",
       "item.the_everything_mod.metal_armorboots": "Metal Boots",
+      "item.the_everything_mod.metal_pickaxe": "Metal Pickaxe",
       "item.the_everything_mod.metal_armorlegs": "Metal Leggings",
       "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
-      "key.mcreator.open_commands_menu": "Open Commands Menu",
-      "item.the_everything_mod.fatpack": "Fatpack",
+      "item.the_everything_mod.metal_sword": "Metal Sword",
       "block.the_everything_mod.easystone": "Easy Stone",
       "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
-      "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "block.the_everything_mod.easy_leaves": "Easy Leaves",
       "block.the_everything_mod.easy_grass": "Easy Grass",
       "item.the_everything_mod.metal_armorbody": "Metal Chestplate",
@@ -571,11 +674,8 @@
       "item.the_everything_mod.magma_armourhelmet": "Magma Armour Helmet",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "block.the_everything_mod.easy_oak_log": "Easy Log",
-      "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
-      "advancements.helloachievment.title": "The Everything Mod",
-      "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox",
-      "block.the_everything_mod.violetore_ore_block": "Block of Violetore"
+      "item.the_everything_mod.metal_hoe": "Metal Hoe",
+      "block.the_everything_mod.metal_ore": "Metal Ore"
     }
   },
   "workspaceSettings": {
