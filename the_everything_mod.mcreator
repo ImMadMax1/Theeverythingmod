@@ -491,6 +491,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ingot"
+    },
+    {
+      "name": "MetalArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_boots_recipe"
+    },
+    {
+      "name": "MetalArmor",
+      "type": "armor",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "MetalArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_leggings_recipe"
+    },
+    {
+      "name": "MetalArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_helmet_recipe"
+    },
+    {
+      "name": "MetalArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_armor_body_recipe"
     }
   ],
   "variable_elements": [],
