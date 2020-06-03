@@ -1,0 +1,12 @@
+{
+  "group": "the_everything_mod",
+  "type": "minecraft:smelting",
+  "experience": 0.9099999999999999,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "the_everything_mod:metal_ore"
+  },
+  "result": {
+    "item": "the_everything_mod:metal_ingot"
+  }
+}

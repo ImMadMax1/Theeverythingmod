@@ -1,9 +1,11 @@
 {
   "item.the_everything_mod.mountain_dew": "Mountain Dew",
+  "item.the_everything_mod.metal_ingot": "Metal",
   "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
   "key.mcreator.open_commands_menu": "Open Commands Menu",
   "item.the_everything_mod.fatpack": "Fatpack",
   "block.the_everything_mod.easystone": "Easy Stone",
+  "block.the_everything_mod.metal_ore_block": "Block of Metal",
   "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
   "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
   "block.the_everything_mod.easy_leaves": "Easy Leaves",
@@ -15,5 +17,6 @@
   "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
   "advancements.helloachievment.title": "The Everything Mod",
   "advancements.helloachievment.descr": "Use the hello command",
-  "block.the_everything_mod.musicbox": "Musicbox"
+  "block.the_everything_mod.musicbox": "Musicbox",
+  "block.the_everything_mod.metal_ore": "Metal Ore"
 }

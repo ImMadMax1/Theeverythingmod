@@ -383,6 +383,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_biome"
+    },
+    {
+      "name": "MetalOre",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore"
+    },
+    {
+      "name": "MetalOreBlock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore_block"
+    },
+    {
+      "name": "MetalIngot",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ingot"
+    },
+    {
+      "name": "MetalOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore_block_recipe"
+    },
+    {
+      "name": "MetalBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_block_ore_recipe"
+    },
+    {
+      "name": "MetalOreSmelting",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metal_ore_smelting"
     }
   ],
   "variable_elements": [],
@@ -396,10 +450,12 @@
   "language_map": {
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
+      "item.the_everything_mod.metal_ingot": "Metal",
       "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "item.the_everything_mod.fatpack": "Fatpack",
       "block.the_everything_mod.easystone": "Easy Stone",
+      "block.the_everything_mod.metal_ore_block": "Block of Metal",
       "item.the_everything_mod.magma_armourbody": "Magma Armour Body",
       "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "block.the_everything_mod.easy_leaves": "Easy Leaves",
@@ -411,7 +467,8 @@
       "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
       "advancements.helloachievment.title": "The Everything Mod",
       "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox"
+      "block.the_everything_mod.musicbox": "Musicbox",
+      "block.the_everything_mod.metal_ore": "Metal Ore"
     }
   },
   "workspaceSettings": {

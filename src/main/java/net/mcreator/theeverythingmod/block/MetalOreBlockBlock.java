@@ -2,6 +2,7 @@
 package net.mcreator.theeverythingmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -9,7 +10,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @TheEverythingModModElements.ModElement.Tag
-public class EasyLeavesBlock extends TheEverythingModModElements.ModElement {
-	@ObjectHolder("the_everything_mod:easy_leaves")
+public class MetalOreBlockBlock extends TheEverythingModModElements.ModElement {
+	@ObjectHolder("the_everything_mod:metal_ore_block")
 	public static final Block block = null;
-	public EasyLeavesBlock(TheEverythingModModElements instance) {
-		super(instance, 13);
+	public MetalOreBlockBlock(TheEverythingModModElements instance) {
+		super(instance, 21);
 	}
 
 	@Override
@@ -35,8 +35,9 @@ public class EasyLeavesBlock extends TheEverythingModModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.1f, 1f).lightValue(0));
-			setRegistryName("easy_leaves");
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5.6f, 10f).lightValue(0).harvestLevel(3)
+					.harvestTool(ToolType.PICKAXE));
+			setRegistryName("metal_ore_block");
 		}
 
 		@Override
@@ -44,7 +45,7 @@ public class EasyLeavesBlock extends TheEverythingModModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.DARK_OAK_SAPLING, (int) (2)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 }

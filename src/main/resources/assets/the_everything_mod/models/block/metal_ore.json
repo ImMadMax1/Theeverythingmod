@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "the_everything_mod:blocks/metalorenew",
+    "particle": "the_everything_mod:blocks/metalorenew"
+  }
+}
