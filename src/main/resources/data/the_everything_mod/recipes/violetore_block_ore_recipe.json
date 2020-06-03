@@ -1,0 +1,13 @@
+{
+  "group": "the_everything_mod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "the_everything_mod:violetore_ore_block"
+    }
+  ],
+  "result": {
+    "item": "the_everything_mod:violetore_gem",
+    "count": 9
+  }
+}

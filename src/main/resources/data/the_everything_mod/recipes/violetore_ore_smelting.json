@@ -1,0 +1,12 @@
+{
+  "group": "the_everything_mod",
+  "type": "minecraft:smelting",
+  "experience": 4.55,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "the_everything_mod:violetore_ore"
+  },
+  "result": {
+    "item": "the_everything_mod:violetore_gem"
+  }
+}

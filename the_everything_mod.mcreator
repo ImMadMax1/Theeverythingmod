@@ -383,6 +383,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easy_biome"
+    },
+    {
+      "name": "VioletoreOre",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_ore"
+    },
+    {
+      "name": "VioletoreOreBlock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_ore_block"
+    },
+    {
+      "name": "VioletoreGem",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_gem"
+    },
+    {
+      "name": "VioletoreOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_ore_block_recipe"
+    },
+    {
+      "name": "VioletoreBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_block_ore_recipe"
+    },
+    {
+      "name": "VioletoreOreSmelting",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "violetore_ore_smelting"
     }
   ],
   "variable_elements": [],
@@ -410,8 +464,11 @@
       "block.the_everything_mod.easy_oak_log": "Easy Log",
       "item.the_everything_mod.magma_armourboots": "Magma Armour Boots",
       "advancements.helloachievment.title": "The Everything Mod",
+      "item.the_everything_mod.violetore_gem": "Violetore",
+      "block.the_everything_mod.violetore_ore": "Violetore Ore",
       "advancements.helloachievment.descr": "Use the hello command",
-      "block.the_everything_mod.musicbox": "Musicbox"
+      "block.the_everything_mod.musicbox": "Musicbox",
+      "block.the_everything_mod.violetore_ore_block": "Block of Violetore"
     }
   },
   "workspaceSettings": {
