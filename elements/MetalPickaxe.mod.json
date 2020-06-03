@@ -1,0 +1,24 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "metal_pickaxe",
+    "customModelName": "Normal",
+    "name": "Metal Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 3,
+    "efficiency": 7.0,
+    "attackSpeed": 1.0,
+    "enchantability": 18,
+    "damageVsEntity": 3.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}
