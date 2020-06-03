@@ -397,7 +397,7 @@
       "name": "VioletoreOre",
       "type": "block",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "violetore_ore"
@@ -415,7 +415,7 @@
       "name": "VioletoreGem",
       "type": "item",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "violetore_gem"
@@ -442,7 +442,7 @@
       "name": "MetalOre",
       "type": "block",
       "sortid": 20,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ore"
@@ -478,7 +478,7 @@
       "name": "MetalOreBlock",
       "type": "block",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ore_block"
@@ -487,7 +487,7 @@
       "name": "MetalIngot",
       "type": "item",
       "sortid": 22,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "metal_ingot"
@@ -555,6 +555,8 @@
   "language_map": {
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
+      "item.the_everything_mod.metal_armorboots": "Metal Boots",
+      "item.the_everything_mod.metal_armorlegs": "Metal Leggings",
       "item.the_everything_mod.magma_armourlegs": "Magma Armour Leggings",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "item.the_everything_mod.fatpack": "Fatpack",
@@ -563,7 +565,9 @@
       "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "block.the_everything_mod.easy_leaves": "Easy Leaves",
       "block.the_everything_mod.easy_grass": "Easy Grass",
+      "item.the_everything_mod.metal_armorbody": "Metal Chestplate",
       "itemGroup.tabeverythingmod": "The Everything Mod",
+      "item.the_everything_mod.metal_armorhelmet": "Metal Helmet",
       "item.the_everything_mod.magma_armourhelmet": "Magma Armour Helmet",
       "block.the_everything_mod.the_everything_mod_title_block": "The Everything Mod Block",
       "block.the_everything_mod.easy_oak_log": "Easy Log",
