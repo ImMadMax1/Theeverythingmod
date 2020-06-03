@@ -1,0 +1,30 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "picksword",
+    "customModelName": "Normal",
+    "name": "ultraviolet",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 20,
+    "efficiency": 24.0,
+    "attackSpeed": 7.699999999999999,
+    "enchantability": 140,
+    "damageVsEntity": 8.9,
+    "usageCount": 15000,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [],
+    "onEntityHitWith": {
+      "name": "VioletoreSwordLivingEntityIsHitWithTool"
+    },
+    "onItemInInventoryTick": {
+      "name": "VioletoreSwordToolInInventoryTick"
+    }
+  }
+}
