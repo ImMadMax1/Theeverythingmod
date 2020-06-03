@@ -27,11 +27,11 @@ public class MetalSwordItem extends TheEverythingModModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 7f;
+				return 5f;
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 1.4f;
 			}
 
 			public int getHarvestLevel() {
