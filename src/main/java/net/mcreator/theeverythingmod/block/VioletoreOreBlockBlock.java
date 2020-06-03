@@ -73,10 +73,10 @@ public class VioletoreOreBlockBlock extends TheEverythingModModElements.ModEleme
 					double d1 = (j + random.nextFloat());
 					double d2 = (k + random.nextFloat());
 					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
-					world.addParticle(ParticleTypes.COMPOSTER, d0, d1, d2, d3, d4, d5);
+					double d3 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.8000000014901161D;
+					world.addParticle(ParticleTypes.PORTAL, d0, d1, d2, d3, d4, d5);
 				}
 		}
 	}

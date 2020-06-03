@@ -64,10 +64,10 @@
     "breakHarvestLevel": 3,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "COMPOSTER"
+      "value": "PORTAL"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningRadious": 0.8000000014901161,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": false,
