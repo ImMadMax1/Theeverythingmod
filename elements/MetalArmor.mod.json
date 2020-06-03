@@ -11,7 +11,7 @@
     "enableBoots": true,
     "textureBoots": "metal_boots",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Everythingmod"
     },
     "armorTextureFile": "metal",
     "helmetName": "Metal Helmet",
