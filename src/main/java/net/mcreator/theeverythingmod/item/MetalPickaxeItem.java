@@ -1,12 +1,20 @@
 
 package net.mcreator.theeverythingmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.theeverythingmod.itemgroup.EverythingmodItemGroup;
+import net.mcreator.theeverythingmod.TheEverythingModModElements;
+
 @TheEverythingModModElements.ModElement.Tag
 public class MetalPickaxeItem extends TheEverythingModModElements.ModElement {
-
 	@ObjectHolder("the_everything_mod:metal_pickaxe")
 	public static final Item block = null;
-
 	public MetalPickaxeItem(TheEverythingModModElements instance) {
 		super(instance, 31);
 	}
@@ -38,8 +46,6 @@ public class MetalPickaxeItem extends TheEverythingModModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(EverythingmodItemGroup.tab)) {
-
 		}.setRegistryName("metal_pickaxe"));
 	}
-
 }

@@ -1,12 +1,20 @@
 
 package net.mcreator.theeverythingmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.theeverythingmod.itemgroup.EverythingmodItemGroup;
+import net.mcreator.theeverythingmod.TheEverythingModModElements;
+
 @TheEverythingModModElements.ModElement.Tag
 public class MetalShovelItem extends TheEverythingModModElements.ModElement {
-
 	@ObjectHolder("the_everything_mod:metal_shovel")
 	public static final Item block = null;
-
 	public MetalShovelItem(TheEverythingModModElements instance) {
 		super(instance, 34);
 	}
@@ -38,8 +46,6 @@ public class MetalShovelItem extends TheEverythingModModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(EverythingmodItemGroup.tab)) {
-
 		}.setRegistryName("metal_shovel"));
 	}
-
 }
