@@ -1,0 +1,112 @@
+{
+  "_fv": 8,
+  "_type": "mob",
+  "definition": {
+    "mobName": "Easy cow",
+    "mobLabel": "",
+    "mobModelName": "Cow",
+    "mobModelTexture": "cow.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 0.9,
+    "modelHeight": 1.4,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -11782623,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -7707844,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Everythingmod"
+    },
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
+    "trackingRange": 64,
+    "health": 10,
+    "xpAmount": 0,
+    "waterMob": false,
+    "flyingMob": false,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "mobDrop": {
+      "value": "Items.COOKED_BEEF"
+    },
+    "livingSound": {
+      "value": "entity.cow.ambient"
+    },
+    "hurtSound": {
+      "value": "entity.cow.hurt"
+    },
+    "deathSound": {
+      "value": "entity.cow.death"
+    },
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasAI": true,
+    "aiBase": "Cow",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "ambient",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:EasyBiome"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

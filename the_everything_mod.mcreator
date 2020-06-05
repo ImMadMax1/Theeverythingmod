@@ -693,6 +693,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Easycow",
+      "type": "mob",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easycow"
     }
   ],
   "variable_elements": [],
@@ -707,11 +716,13 @@
     "en_us": {
       "item.the_everything_mod.mountain_dew": "Mountain Dew",
       "item.the_everything_mod.metal_ingot": "Metal",
+      "item.the_everything_mod.easycow": "Easy cow Spawn Egg",
       "item.the_everything_mod.easypig": "Easy Pig Spawn Egg",
       "key.mcreator.open_commands_menu": "Open Commands Menu",
       "item.the_everything_mod.metal_shovel": "Metal Shovel",
       "item.the_everything_mod.fatpack": "Fatpack",
       "block.the_everything_mod.metal_ore_block": "Block of Metal",
+      "entity.the_everything_mod.easycow": "Easy cow",
       "entity.the_everything_mod.easypig": "Easy Pig",
       "block.the_everything_mod.easy_leaves_apple": "Easy Apple Leaves",
       "item.the_everything_mod.metal_axe": "Metal Axe",
