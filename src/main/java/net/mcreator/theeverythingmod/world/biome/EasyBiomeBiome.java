@@ -32,6 +32,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.theeverythingmod.entity.EasypigEntity;
 import net.mcreator.theeverythingmod.entity.EasycowEntity;
+import net.mcreator.theeverythingmod.entity.EasyZombieEntity;
 import net.mcreator.theeverythingmod.block.EasystoneBlock;
 import net.mcreator.theeverythingmod.block.EasyOakLogBlock;
 import net.mcreator.theeverythingmod.block.EasyLeavesBlock;
@@ -82,6 +83,7 @@ public class EasyBiomeBiome extends TheEverythingModModElements.ModElement {
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EasypigEntity.entity, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EasycowEntity.entity, 15, 1, 5));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EasyZombieEntity.entity, 15, 1, 5));
 		}
 	}
 

@@ -2,26 +2,26 @@
   "_fv": 8,
   "_type": "mob",
   "definition": {
-    "mobName": "Easy Cow",
+    "mobName": "Easy Zombie",
     "mobLabel": "",
-    "mobModelName": "Cow",
-    "mobModelTexture": "cow.png",
+    "mobModelName": "Biped",
+    "mobModelTexture": "zombie.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.9,
-    "modelHeight": 1.4,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -11782623,
+      "value": -16724788,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -7707844,
+      "value": -16724992,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:Everythingmod"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -45,9 +45,9 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "movementSpeed": 0.1,
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 0,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "health": 1,
@@ -67,16 +67,16 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "Items.COOKED_BEEF"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.cow.ambient"
+      "value": "entity.zombie.ambient"
     },
     "hurtSound": {
-      "value": "entity.cow.hurt"
+      "value": "entity.zombie.hurt"
     },
     "deathSound": {
-      "value": "entity.cow.death"
+      "value": "entity.zombie.death"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -87,8 +87,8 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasAI": true,
-    "aiBase": "Cow",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "Zombie",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">0.5</field><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "breedTriggerItems": [],
     "ranged": false,
@@ -99,9 +99,9 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "ambient",
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:EasyBiome"
